@@ -17,6 +17,7 @@ The program needs one argument.
 ## INPUT:
 
 The input file should be as follows:
+<pre>
 CHR1 10 20
 CHR1 30 40
 CHR1 39 50
@@ -29,11 +30,13 @@ chr2 35 39
 chr2 55 60
 chr2 56 59
 chr2 61 70
+</pre>
 
 ## OUTPUT:
 With the above entries in a bed file, the program will output as:
+<pre>
 CHR1 = 35
 chr2 = 44
-
+</pre>
 
 
