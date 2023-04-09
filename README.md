@@ -1,7 +1,4 @@
-# cumReg
-
-#   PACKAGE:
-     cumReg
+#   PACKAGE:  cumReg
 
 This program finds the total length of genome in bp covered
 in the bed file. Also, the program calculates the bp covered 
