@@ -31,6 +31,10 @@ chr2 55 60
 chr2 56 59
 chr2 61 70
 </pre>
+Column 1: Chromosome identifier
+Column 2: Start
+Column 3: End
+Each column should be seperated by space/s.
 
 ## OUTPUT:
 With the above entries in a bed file, the program will output as:
