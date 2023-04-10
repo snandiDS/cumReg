@@ -9,7 +9,10 @@ The program needs one argument.
    1. bed file
 
 ## SYNTAX:
-    ./sumCumReg bed_file.bed 
+    ./sumCumReg -f bed_file.bed
+    ./sumCumReg -fname BED_FILE.BED
+    ./sumCumReg -h
+    ./sumCumReg --help
 
 ## INPUT:
 
