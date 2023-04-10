@@ -1,0 +1,12 @@
+chr 10 20
+chr 30 40
+chr 39 50
+chr 35 39
+chr 55 60
+chrX 10 20
+chrX 30 40
+chrX 39 50
+chrX 35                          39
+chrX 55 60
+chrX	56 59
+chrX 61 70
