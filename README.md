@@ -9,10 +9,14 @@ The program needs one argument.
    1. bed file
 
 ## SYNTAX:
-    ./sumCumReg -f bed_file.bed
-    ./sumCumReg -fname BED_FILE.BED
+    ./sumCumReg -f bed_file.bed -i [0/1]
+    ./sumCumReg -fname BED_FILE.BED -ignore [0/1]
     ./sumCumReg -h
     ./sumCumReg --help
+
+## OPTIONS:
+    -f / -fname:    BED_FILE_NAME
+    -i / -ignore:   0 OR 1 (1 to ignore overlapping, and 0 to impose overlapping)
 
 ## INPUT:
 
@@ -42,6 +46,20 @@ With the above entries in a bed file, the program will output as:
 <pre>
 CHR1 = 35
 chr2 = 44
+</pre>
+
+<pre>
+   In the version v2, we have made changes as follows:
+   1. Now one can choose if the summation needs to be done considering
+   the overlapping region/ignore overlapping.
+   For example:
+   If we have a bed file as,
+   CHR1 10 20
+   CHR1 15 25
+   CHR1 30 40
+   Then with the option '-i 1' (means ignore overlapping) the sum will 
+   be 30. And with the option '-i 0' (means consider overlapping regoins)
+   the sum will be 25.
 </pre>
 
 
