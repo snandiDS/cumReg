@@ -48,7 +48,7 @@ CHR1 = 35
 chr2 = 44
 </pre>
 
-## VERSION: 2 - Latest is the Version 3
+## VERSION: 2 - Latest is the Version 4
 <pre>
    In the version v2, we have made changes as follows:
    1. Now one can choose if the summation needs to be done considering
@@ -63,7 +63,7 @@ chr2 = 44
    the sum will be 25.
 </pre>
 
-## VERSION: 3
+## VERSION: 3 - Latest is the Version 4
 <pre>
     In the version V3, we added a new parameter -p. Options [0/1]
     This parameter will print the overlapping regions if passed 1.
@@ -84,6 +84,26 @@ chr2 = 44
    CHR1 30      40
    CHR1 = 25
   
+
+   ## SYNTAX:
+    ./sumCumReg -f bed_file.bed -i [0/1] -p [0/1]
+    ./sumCumReg -fname BED_FILE.BED -ignore [0/1] -print [0/1]
+    ./sumCumReg -h
+    ./sumCumReg --help
+
+   ## OPTIONS:
+    -f / -fname:    BED_FILE_NAME
+    -i / -ignore:   0 OR 1 (1 to ignore overlapping, and 0 to impose overlapping)
+    -p / -print:   0 OR 1 (1 to print the overlapping regions, and 0 to ignore printing)
+
+
+</pre>
+
+## VERSION: 4
+<pre>
+    There was a bug in the version V3. The bug is fixed in this version.
+    The bug was ignoring the first record of the consicutive new chromosomes.
+    Rest everything remains same.
 
    ## SYNTAX:
     ./sumCumReg -f bed_file.bed -i [0/1] -p [0/1]
